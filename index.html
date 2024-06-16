@@ -4,80 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | QR code component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <!--Outfit font-weight: 400, 600, 700-->
+    <!--Font-size for paragraph: 16px-->
+    <title>Frontend Mentor | Recipe page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      body {
-        background-color: hsl(212, 45%, 89%);
-        font-family: "Outfit", sans-serif;
-      }
-
-      .container {
-        margin: 200px auto;
-        width: 22%;
-        background-color: #fff;
-        border-radius: 11px;
-        font-weight: 400;
-        padding-bottom: 24px;
-      }
-
-      .qr-img {
-        display: block;
-        width: 90%;
-        border-radius: 9px;
-        margin: 0 auto;
-      }
-
-      .picture-div {
-        padding-top: 16px;
-      }
-
-      .text-div {
-        padding: 0 24px;
-      }
-
-      h2,
-      p {
+    <!--- <style>
+      .attribution {
+        font-size: 11px;
         text-align: center;
       }
-
-      h2 {
-        font-size: 20px;
-        color: hsl(218, 44%, 22%);
+      .attribution a {
+        color: hsl(228, 45%, 44%);
       }
-
-      p {
-        font-size: 15px;
-        color: hsl(220, 15%, 55%);
-      }
-    </style>
+    </style>-->
   </head>
   <body>
-    <div class="main-container">
-      <div class="container">
-        <div class="picture-div">
-          <img class="qr-img" src="image-qr-code.png" alt="QR code" />
-        </div>
-        <div class="text-div">
-          <h2>Improve your front-end skills by building projects</h2>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
+    <div class="container">
+      <div class="recipe-content">
+        <div class="meal-description">
+          <img
+            src="assets/images/image-omelette.jpeg"
+            alt="Omlette"
+            class="omlette"
+          />
+          <h2 class="heading-recipe">Simple Omelette Recipe</h2>
+
+          <p class="info-text">
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
           </p>
+        </div>
+        <!------------->
+        <div class="list-div">
+          <h3 class="preperation">Preparation time</h3>
+          <ul class="prepare-list">
+            <li class="list"><span>Total:</span> Approximately 10 minutes</li>
+            <li class="list"><span>Preparation:</span> 5 minutes</li>
+            <li class="list"><span>Cooking:</span> 5 minutes</li>
+          </ul>
+        </div>
+        <!------------>
+        <div class="ingredient-div">
+          <h3 class="ingredients">Ingredients</h3>
+          <ul class="ingredient-list">
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </div>
+        <!-------------->
+        <div class="instruction-div">
+          <h3 class="instructions">Instructions</h3>
+          <ol class="instruction-list">
+            <li>
+              <span class="span">Beat the eggs:</span> In a bowl, beat the eggs
+              with a pinch of salt and pepper until they are well mixed. You can
+              add a tablespoon of water or milk for a fluffier texture.
+            </li>
+            <li>
+              <span class="span">Heat the pan:</span> Place a non-stick frying
+              pan over medium heat and add butter or oil.
+            </li>
+
+            <li>
+              <span class="span">Cook the omelette:</span> Once the butter is
+              melted and bubbling, pour in the eggs. Tilt the pan to ensure the
+              eggs evenly coat the surface.
+            </li>
+
+            <li>
+              <span class="span">Add fillings (optional):</span> When the eggs
+              begin to set at the edges but are still slightly runny in the
+              middle, sprinkle your chosen fillings over one half of the
+              omelette.
+            </li>
+            <li>
+              <span class="span">Fold and serve:</span> As the omelette
+              continues to cook, carefully lift one edge and fold it over the
+              fillings. Let it cook for another minute, then slide it onto a
+              plate.
+            </li>
+            <li>
+              <span class="span">Enjoy:</span> Serve hot, with additional salt
+              and pepper if needed.
+            </li>
+          </ol>
+        </div>
+        <!------------>
+        <div class="nutrition-div">
+          <h3 class="nutrition">Nutrition</h3>
+          <p class="nutrition-text">
+            The table below shows nutritional values per serving without the
+            additional fillings.
+          </p>
+          <div class="flex-div">
+            <p class="flex-text">Calories</p>
+            <span class="flex-ingredient">277kcal</span>
+          </div>
+          <span class="span-line"></span>
+
+          <div class="flex-div div-2">
+            <p class="flex-text">Carbs</p>
+            <span class="flex-ingredient">0g</span>
+          </div>
+          <span class="span-line"></span>
+
+          <div class="flex-div div-3">
+            <p class="flex-text">Protein</p>
+            <span class="flex-ingredient">20g</span>
+          </div>
+          <span class="span-line"></span>
+
+          <div class="flex-div div-4">
+            <p class="flex-text">Fat</p>
+            <span class="flex-ingredient">22g</span>
+          </div>
+          <span class="span-line"></span>
         </div>
       </div>
     </div>
@@ -86,7 +154,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Elmedin</a>.
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
   </body>
 </html>
