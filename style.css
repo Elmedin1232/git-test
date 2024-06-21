@@ -12,7 +12,7 @@ p {
 }
 
 .main-container {
-  width: 38%;
+  width: 45%;
   margin: 200px auto;
 }
 
@@ -24,7 +24,7 @@ p {
 
 .score-container {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  width: 265px;
+  width: 295px;
   text-align: center;
   border-radius: 22px;
   padding-top: 32px;
@@ -63,7 +63,7 @@ p {
 }
 
 .score-text {
-  padding: 0 32px;
+  padding: 0 48px;
 }
 
 .great {
@@ -79,7 +79,7 @@ p {
 }
 /*****************/
 .summary-container {
-  width: 265px;
+  width: 295px;
   padding: 32px 24px;
 }
 
