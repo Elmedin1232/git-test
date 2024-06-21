@@ -35,7 +35,6 @@ body {
 .foundation {
   font-size: 24px;
   margin-bottom: 20px;
-  color: hsl(47, 88%, 63%);
   font-weight: 800;
   cursor: pointer;
 }
