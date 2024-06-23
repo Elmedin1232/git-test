@@ -1,0 +1,104 @@
+html {
+  font-size: 62.5%;
+}
+
+p,
+h2,
+h3,
+span {
+  font-size: 1.8rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 74%, 36%);
+  font-family: "Kumbh Sans", sans-serif;
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 47vw bottom 40vh, left 48vw top 48vh;
+}
+
+.container {
+  width: 30%;
+  margin: 200px auto;
+  box-shadow: 0.8rem 0.8rem 7.2rem -2.4rem hsl(229, 23%, 23%);
+  border-radius: 1.6rem;
+}
+
+.color-div {
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.image-div {
+  height: 15rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  position: relative;
+}
+
+.image-name {
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+
+  transform: translate(-50%, -50%);
+}
+
+.image-div {
+  background-image: url(images/bg-pattern-card.svg);
+  margin-bottom: 6.4rem;
+}
+
+.age {
+  color: hsl(0, 0%, 59%);
+}
+
+.name,
+.london {
+  text-align: center;
+}
+
+.london {
+  color: hsl(0, 0%, 59%);
+  font-size: 1.6rem;
+  margin-top: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+/******************/
+.grid-3-cols {
+  border-top: 1px solid hsla(0, 0%, 59%, 0.315);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2.4rem 4.8rem;
+  gap: 2.4rem;
+}
+
+.stats {
+  font-weight: 700;
+}
+
+.span-stats {
+  display: inline-block;
+  color: hsl(0, 0%, 59%);
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+}
+
+.followers,
+.likes,
+.photos {
+  text-align: center;
+}
