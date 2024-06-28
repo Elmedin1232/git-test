@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+div {
+  font-size: 1.6rem;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background-color: hsla(216, 22%, 67%, 0.178);
+}
+
+.container {
+  width: 50%;
+  margin: 200px auto;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.slide-right {
+  animation-name: slide-right;
+  animation-timing-function: ease-in;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0.6rem 0.6rem 2.4rem -10px hsl(218, 22%, 67%);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.community-grid,
+.sign-up-grid,
+.tutorial-grid {
+  padding: 4.4rem 4rem;
+}
+
+.community-grid {
+  grid-column: 1/-1;
+  background-color: #fff;
+}
+
+.sign-up-grid {
+  background-color: hsl(179, 64%, 40%);
+}
+
+.tutorial-grid {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.community {
+  color: hsl(179, 73%, 41%);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.free-money {
+  color: hsl(71, 77%, 51%);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.text {
+  color: hsl(200, 4%, 68%);
+  line-height: 1.6;
+  padding-right: 4.6rem;
+}
+/**********/
+.monthly {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.price-text {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.price-text span {
+  font-size: 1.6rem;
+  color: hsla(203, 44%, 93%, 0.651);
+  font-weight: 400;
+}
+
+.access-text {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 4rem;
+}
+
+.btn {
+  border: 1px solid green;
+  color: #fff;
+  background-color: hsl(71, 73%, 54%);
+  width: 100%;
+  padding: 1.8rem 0;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0.8rem 0.8rem 2.4rem hsl(179, 69%, 31%);
+}
+/********************/
+.tutorial-grid h3 {
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+
+.tutorial-text,
+.second-text {
+  color: hsla(203, 44%, 93%, 0.815);
+  line-height: 1.5;
+  padding-right: 4rem;
+}
+
+.second-text span {
+  margin-right: 4rem;
+}
+
+.decks {
+  padding-right: 4.4rem;
+}
