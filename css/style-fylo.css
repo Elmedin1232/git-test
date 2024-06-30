@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+div,
+article,
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-size: 1.4rem;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(../images/bg-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 45vh;
+  padding-top: 200px;
+}
+
+.fylo-section {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2.4rem;
+}
+
+.art-document,
+.art-specification {
+  background-color: hsl(229, 52%, 24%);
+}
+
+.art-document {
+  padding: 3.2rem;
+  border-radius: 11px;
+  border-top-right-radius: 8rem;
+}
+
+.art-specification {
+  align-self: start;
+  margin-top: 3.2rem;
+  padding: 3.2rem 2.4rem;
+  border-radius: 11px;
+  position: relative;
+}
+
+.fylo {
+  width: 47%;
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+.document,
+.folder,
+.upload {
+  display: block;
+}
+
+.img-div {
+  display: flex;
+  gap: 1.6rem;
+  padding-bottom: 1.2rem;
+}
+
+.flex-div {
+  display: flex;
+  align-items: center;
+  background-color: hsl(229, 57%, 11%);
+  padding: 1rem;
+  border-radius: 9px;
+}
+
+.text {
+  color: hsl(243, 100%, 93%);
+}
+
+.remaining {
+  background-color: #fff;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  border-radius: 9px;
+  position: absolute;
+  top: -20%;
+  right: 10%;
+}
+
+.remaining::after {
+  content: "";
+  border-bottom: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-right: 12px solid #fff;
+  border-top: 12px solid #fff;
+
+  position: absolute;
+  right: 0;
+  top: 5.1rem;
+}
+
+.remaining span {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(240, 12%, 73%);
+}
+
+.text {
+  color: hsl(240, 12%, 73%);
+  margin-bottom: 1.6rem;
+}
+
+.indicator-container {
+  background-color: hsl(229, 57%, 11%);
+  width: 100%;
+  height: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  padding: 0.2rem 0;
+}
+
+.range {
+  background-image: linear-gradient(
+    to right,
+    hsla(6, 100%, 80%, 0.699),
+    hsl(335, 100%, 65%)
+  );
+  width: 81.5%;
+  height: 1.6rem;
+  border-radius: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.text span {
+  color: #fff;
+}
+
+.dot-point {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.min-max {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+strong {
+  font-weight: 700;
+}
