@@ -1,0 +1,169 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.section-container {
+  font-size: 1.5rem;
+  max-width: 70rem;
+  margin: 200px auto;
+}
+
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.sedans-grid {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs-grid {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-grid {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.sedans-grid,
+.suvs-grid,
+.luxury-grid {
+  padding: 4rem 2.8rem;
+}
+
+.sedans,
+.suvs,
+.luxury {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 2.4rem;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.sedans-text,
+.suvs-text,
+.luxury-text {
+  line-height: 1.55;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.27rem;
+}
+
+.sedans-text {
+  color: hsla(0, 0%, 93%, 0.75);
+}
+
+.suvs-text {
+  color: hsl(184, 35%, 69%);
+}
+
+.luxury-text {
+  color: hsl(180, 17%, 70%);
+}
+
+img {
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 2.6rem;
+  margin-top: 4.8rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.color-orange {
+  color: hsl(31, 77%, 52%);
+  outline-offset: 2px;
+  transition: all 0.3s;
+}
+
+.color-blue {
+  color: hsl(184, 88%, 27%);
+  font-weight: 500;
+  outline-offset: 2px;
+  transition: all 0.3s;
+}
+
+.color-green {
+  color: hsl(178, 91%, 18%);
+  font-weight: 500;
+  outline-offset: 2px;
+  transition: all 0.3s;
+}
+
+.color-orange:hover,
+.color-blue:hover,
+.color-green:hover {
+  color: #fff;
+  background: none;
+  box-shadow: 0 0 0 2px #fff;
+}
+/****ANIMATIONS*****/
+@keyframes slide-left {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-left {
+  animation-name: slide-left;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-up {
+  animation-name: slide-up;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-right {
+  animation-name: slide-right;
+  animation-timing-function: ease-in-out;
+}
+
+.animate {
+  animation-duration: 0.7s;
+}

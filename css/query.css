@@ -1,0 +1,12 @@
+@media (max-width: 24em) {
+  .section-container {
+    margin: 8rem 2rem;
+  }
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    margin-top: 1.8rem;
+  }
+}
