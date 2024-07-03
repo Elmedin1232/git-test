@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.header-logo {
+  padding: 5.6rem 6.4rem;
+  padding-bottom: 0;
+}
+
+.huddle-section {
+  max-width: 123rem;
+  margin: 10rem auto;
+  position: relative;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.image-div img {
+  width: 105%;
+}
+
+.community-div {
+  margin-left: 5.2rem;
+  margin-top: 4.8rem;
+}
+
+.heading-primary {
+  color: #fff;
+  font-size: 4.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.text {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.btn {
+  border: none;
+  background-color: #fff;
+  padding: 1.6rem 5.6rem;
+  color: hsl(257, 40%, 49%);
+  border-radius: 2.6rem;
+  cursor: pointer;
+  box-shadow: 0.8rem 1.2rem 1.2rem -0.2rem hsl(257, 48%, 41%);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: hsl(300, 69%, 71%);
+}
+
+.icons {
+  position: absolute;
+  bottom: -15%;
+  right: 0.5%;
+}
+
+.fa-brands {
+  display: inline-block;
+  color: #fff;
+  border-radius: 50%;
+  border: 0.1rem solid #fff;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  margin-right: 1.2rem;
+  cursor: pointer;
+}
+
+.fa-facebook-f {
+  padding: 0.8rem 1.2rem;
+}
+
+.fa-instagram {
+  padding: 0.8rem 1rem;
+}
+
+.fa-twitter {
+  padding: 0.8rem 0.9rem;
+  transition: all 0.3s;
+}
+
+.fa-twitter:hover {
+  color: hsl(300, 71%, 70%);
+  border: 0.1rem solid hsl(300, 71%, 70%);
+}
+/****ANIMATIONS****/
+@keyframes header-logo {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.header-logo {
+  animation-name: header-logo;
+}
+
+@keyframes image-div {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.image-div {
+  animation-name: image-div;
+  animation-timing-function: ease(0.77, 0, 0.175, 1);
+}
+
+@keyframes community-div {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.community-div {
+  animation-name: community-div;
+}
+
+.animate {
+  animation-duration: 0.8s;
+}
