@@ -1,169 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   font-size: 62.5%;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: hsl(0, 0%, 95%);
+  font-family: "Poppins", sans-serif;
+  background-color: hsla(234, 12%, 34%, 0.04);
 }
 
 .section-container {
-  font-size: 1.5rem;
-  max-width: 70rem;
-  margin: 200px auto;
+  max-width: 101rem;
+  margin: 5rem auto;
+  position: relative;
 }
 
-.grid--3-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-radius: 11px;
-  overflow: hidden;
+.header {
+  text-align: center;
+  margin-bottom: 3.6rem;
 }
 
-.sedans-grid {
-  background-color: hsl(31, 77%, 52%);
+.heading {
+  font-size: 2.4rem;
+  font-weight: 200;
 }
 
-.suvs-grid {
-  background-color: hsl(184, 100%, 22%);
+.heading-2 {
+  font-size: 2.4rem;
+  color: hsl(210, 2%, 33%);
+  margin-bottom: 1.6rem;
 }
 
-.luxury-grid {
-  background-color: hsl(179, 100%, 13%);
+.text {
+  color: hsl(229, 6%, 66%);
+  font-size: 1.2rem;
+  padding: 0 30rem;
+  line-height: 1.6;
 }
-
-.sedans-grid,
-.suvs-grid,
-.luxury-grid {
-  padding: 4rem 2.8rem;
-}
-
-.sedans,
-.suvs,
-.luxury {
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 2.4rem;
-  font-family: "Big Shoulders Display", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 700;
-}
-
-.sedans-text,
-.suvs-text,
-.luxury-text {
-  line-height: 1.55;
-  font-family: "Lexend Deca", sans-serif;
-  font-size: 1.27rem;
-}
-
-.sedans-text {
-  color: hsla(0, 0%, 93%, 0.75);
-}
-
-.suvs-text {
-  color: hsl(184, 35%, 69%);
-}
-
-.luxury-text {
-  color: hsl(180, 17%, 70%);
+/******/
+.supervisor-div {
+  border-top: 4px solid hsl(180, 62%, 55%);
+  padding: 2.4rem 3.2rem;
+  padding-right: 4rem !important;
 }
 
 img {
-  margin-bottom: 2.4rem;
+  display: block;
+  margin-left: auto;
 }
 
-.btn {
-  display: inline-block;
-  border: none;
-  background-color: #fff;
-  padding: 1.2rem 2.4rem;
-  border-radius: 2.6rem;
-  margin-top: 4.8rem;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-  font-size: 1.3rem;
-  cursor: pointer;
+.supervisor-text,
+.builder-text,
+.karma-text,
+.calculator-text {
+  margin-bottom: 4rem;
+}
+.supervisor-text {
+  padding: 0 2.4rem;
+  padding-left: 0;
+  line-height: 1.8;
 }
 
-.color-orange {
-  color: hsl(31, 77%, 52%);
-  outline-offset: 2px;
-  transition: all 0.3s;
+.color {
+  color: hsl(229, 6%, 66%);
 }
 
-.color-blue {
-  color: hsl(184, 88%, 27%);
-  font-weight: 500;
-  outline-offset: 2px;
-  transition: all 0.3s;
+.head {
+  color: hsla(234, 12%, 30%, 0.863);
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+/***********/
+.builder-div {
+  border-top: 4px solid hsl(0, 78%, 62%);
+  align-self: start;
 }
 
-.color-green {
-  color: hsl(178, 91%, 18%);
-  font-weight: 500;
-  outline-offset: 2px;
-  transition: all 0.3s;
+.builder-text {
+  padding-right: 5rem;
+}
+/******/
+.karma-div {
+  border-top: 4px solid hsl(34, 97%, 64%);
+  grid-column: 2;
+  width: 25%;
+  position: absolute;
+  top: 75%;
+  right: 34%;
+  margin-top: 3.2rem;
 }
 
-.color-orange:hover,
-.color-blue:hover,
-.color-green:hover {
-  color: #fff;
-  background: none;
-  box-shadow: 0 0 0 2px #fff;
+.karma-text {
+  padding-right: 2rem;
 }
-/****ANIMATIONS*****/
-@keyframes slide-left {
-  from {
-    transform: translateX(-100%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
+/*******/
+.calculator-div {
+  border-top: 4px solid hsl(212, 86%, 64%);
 }
 
-.slide-left {
-  animation-name: slide-left;
-  animation-timing-function: ease-in;
+.calculator-text {
+  padding-right: 3rem;
+}
+/****/
+.supervisor-div,
+.builder-div,
+.karma-div,
+.calculator-div {
+  box-shadow: 0.8rem 0.8rem 2.4rem -1.5rem hsl(234, 12%, 34%);
+  padding: 2.4rem 3.2rem;
+}
+/******/
+.grid-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 2.4rem;
 }
 
-@keyframes slide-up {
-  from {
-    transform: translateY(-100%);
-  }
-
-  to {
-    transform: translateY(0);
-  }
+.supervisor-div,
+.calculator-div {
+  margin-top: 12rem;
 }
 
-.slide-up {
-  animation-name: slide-up;
-  animation-timing-function: ease-in;
+/*.builder-div,
+.karma-div {
+  margin: 0 auto;
+}*/
+/*
+.supervisor-div {
+  position: absolute;
+  top: 44%;
+  left: -1%;
 }
 
-@keyframes slide-right {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(0);
-  }
-}
-
-.slide-right {
-  animation-name: slide-right;
-  animation-timing-function: ease-in-out;
-}
-
-.animate {
-  animation-duration: 0.7s;
-}
+.calculator-div {
+  position: absolute;
+  top: 44%;
+  right: -1%;
+}*/

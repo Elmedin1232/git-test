@@ -1,0 +1,45 @@
+@media (max-width: 24em) {
+  .section-container {
+    margin-right: 0;
+    padding-right: 0;
+    margin: 5rem auto;
+  }
+  .header {
+    margin-bottom: 2.4rem;
+  }
+  .text {
+    padding: 0;
+  }
+
+  .heading,
+  .heading-2 {
+    font-size: 1.6rem;
+  }
+
+  .grid-cols {
+    grid-template-columns: 1fr;
+    padding-left: 1.6rem;
+  }
+
+  .calculator-div,
+  .supervisor-div {
+    margin-top: 0;
+  }
+
+  .calculator-div,
+  .supervisor-div,
+  .karma-div,
+  .builder-div {
+    width: 80%;
+  }
+
+  .karma-div {
+    top: 100%;
+    right: 0%;
+    width: 77%;
+  }
+
+  .builder-div {
+    width: 81%;
+  }
+}
