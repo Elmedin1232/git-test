@@ -1,0 +1,144 @@
+@media (max-width: 24em) {
+  .header {
+    width: 100%;
+  }
+
+  .main-section {
+    padding: 0 3.2rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .main-text {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .btn-ios {
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+  }
+
+  .imgs {
+    flex-direction: column;
+    gap: 8.6rem;
+  }
+  /******/
+  .secondary-section {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+  /******/
+  .third-section {
+    grid-template-columns: 1fr;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    margin-top: 4rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .screen-div {
+    text-align: center;
+  }
+
+  .screen-div img {
+    width: 100%;
+  }
+
+  .textual-div {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .textual-div p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  /****/
+  .forth-section {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+    padding-bottom: 6.4rem;
+  }
+
+  .tablet-div img {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+  /*****/
+  .fifth-section {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .icon-third {
+    margin-top: 0;
+  }
+
+  .blacklist,
+  .snippets {
+    margin-bottom: 3.2rem;
+  }
+  /*******/
+  .clipboard-section {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+
+  .secondary-size {
+    font-size: 2.8rem;
+  }
+
+  .margin-bottom {
+    margin-bottom: 4rem;
+  }
+
+  .footer {
+    padding: 4.8rem 0;
+  }
+
+  .footer-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2.4rem;
+  }
+
+  .main-div {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .contact-icons {
+    margin: 0 auto;
+    margin-top: 3.2rem;
+    gap: 3.2rem;
+  }
+
+  .contact-icons img {
+    display: block;
+  }
+
+  .privacy {
+    grid-row: 3;
+  }
+
+  .contact {
+    grid-row: 2;
+  }
+
+  .install-kit {
+    grid-row: 5;
+  }
+}
