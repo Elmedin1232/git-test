@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-section {
+  display: flex;
+}
+
+.line {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  width: 43rem;
+  height: 135vh;
+
+  border-radius: 0 0 22rem 22rem;
+  margin-left: -6.5rem;
+  margin-right: -3rem;
+}
+/*****/
+
+.chat-section {
+  width: 30rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+
+  box-shadow: 1.2rem 1.2rem 3.6rem -1.5rem hsl(271, 15%, 43%);
+  position: relative;
+
+  border-radius: 2.5rem;
+  align-self: center;
+}
+
+.chat-section::after {
+  content: "";
+  width: 15rem;
+  height: 3rem;
+  background-color: #fff;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-radius: 2rem;
+
+  transform: translatex(-50%);
+}
+
+.second-background {
+  background-color: hsl(270, 20%, 96%);
+  overflow: hidden;
+
+  /*border-top-left-radius: 2.5rem;*/
+  /*border-top-right-radius: 2.5rem;*/
+
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+
+  padding: 0 1.2rem;
+}
+
+.person-info {
+  background-image: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  padding-top: 1.6rem;
+
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: -0.35rem;
+}
+
+.flex-inner {
+  display: flex;
+  align-items: center;
+
+  padding: 2rem 1.2rem;
+}
+
+.img-samuel {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.btn {
+  border: none;
+  background: none;
+}
+
+.icon-left {
+  width: 2.2rem;
+  height: 2.2rem;
+  stroke: #fff;
+  stroke-width: 0.25rem;
+  cursor: pointer;
+}
+
+.author {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.text {
+  color: hsl(289, 53%, 68%);
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.dots {
+  padding-right: 2.4rem;
+}
+
+.dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+/******/
+.chat-text {
+  font-size: 1.2rem;
+  width: 19rem;
+  background-color: hsla(268, 7%, 64%, 0.247);
+  margin-top: 1.2rem;
+  padding: 1rem 1.2rem;
+
+  border-radius: 1.5rem 2rem 2rem 1rem;
+  color: hsla(276, 55%, 52%, 0.932);
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.img-div {
+  text-align: right;
+  margin-top: 1.8rem;
+}
+
+.img-div img {
+  width: 20%;
+  border-radius: 9px;
+  margin-right: 1.2rem;
+}
+
+.img-3 {
+  margin-right: 0 !important;
+}
+
+.chat-align-right {
+  margin-left: 6.8rem;
+}
+
+.chat-second {
+  background-color: white;
+  width: 19rem;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  padding: 1rem 1.2rem;
+  color: hsl(271, 15%, 43%);
+
+  border-radius: 2rem 2rem 1rem 2rem;
+}
+
+.length {
+  width: 12rem !important;
+  margin-left: 6.95rem;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.price-div {
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  width: 22rem;
+  margin-top: 1.2rem;
+  padding: 1.6rem 1rem;
+  padding-right: 2rem;
+  border-radius: 2rem 2rem 2rem 1rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.price-div p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.price {
+  margin-left: auto;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.circle {
+  display: inline-block;
+  background: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #ffffff96;
+}
+
+.btn-second {
+  border-radius: 50%;
+  background-color: hsl(271, 36%, 24%);
+  width: 3.2rem;
+  height: 3.2rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 1.8rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-radius: 2.5rem;
+  padding-left: 2.4rem;
+  padding-right: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.message-text {
+  font-size: 1.2rem;
+  color: hsl(206, 6%, 79%);
+}
+
+.message-text:hover,
+.message-text:active {
+  outline-color: black;
+  border: 2px solid #000;
+}
+
+.icon-right {
+  stroke: #fff;
+  width: 2rem;
+  height: 2rem;
+}
+/******/
+.booking-section {
+  align-self: center;
+  margin-left: 12rem;
+  margin-right: -7.5rem;
+}
+
+.booking {
+  color: hsl(323, 35%, 22%);
+  font-size: 4rem;
+  margin-bottom: 1.6rem;
+}
+
+.booking-text {
+  font-size: 1.6rem;
+  width: 45rem;
+  line-height: 1.6;
+  color: hsl(0, 0%, 63%);
+}
+
+.line-dark {
+  background-color: hsla(276, 100%, 81%, 0.096);
+  width: 22rem;
+  height: 120vh;
+  margin-top: 18rem;
+
+  border-top-left-radius: 18rem;
+}
